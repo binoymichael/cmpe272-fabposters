@@ -1,3 +1,3 @@
 <?php
 
-echo "Hello there"
+require __DIR__ . '/../src/bootstrap.php';
