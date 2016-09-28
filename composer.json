@@ -1,0 +1,21 @@
+{
+    "name": "Fabposters",
+    "description": "Individual project for SJSU CMPE 272",
+    "keywords": ["posters", "cmpe272"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Binoy",
+            "email": "prakash.binoy@gmail.com",
+            "role": "Creator / Main Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Fabposters\\": "src/"
+        }
+    }
+}
