@@ -1,3 +1,2 @@
 <?php
-
-echo 'Home';
+	require '../views/home/index.view.php';
