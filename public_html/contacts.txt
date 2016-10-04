@@ -1,0 +1,4 @@
+home, Head Office, ENG 337, SJSU, desk@slashbin.in
+user, Sales, Head Sales, sales@slashbin.in, +1-408-753-xxxx
+pencil, Design, Creative Director, design@slashbin.in, +1-408-753-xxxx
+earphone, Customer Care, care@slashbin.in, +1-408-753-xxxx

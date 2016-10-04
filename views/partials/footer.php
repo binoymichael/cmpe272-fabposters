@@ -14,7 +14,7 @@
         <li><a href="products">PRODUCTS</a></li>
         <li><a href="about">ABOUT</a></li>
         <li><a href="news">NEWS</a></li>
-        <li><a href="contact">CONTACT</a></li>
+        <li><a href="contacts">CONTACTS</a></li>
       </ul>
     </div>
   </div>
