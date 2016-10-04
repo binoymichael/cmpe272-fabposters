@@ -8,30 +8,14 @@
   <h3>Best Sellers</h3>
   <br>
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-2">
-	  <img class="poster" src="images/gandalf.jpg" alt="gandalf">
-	  <a href="products" class="btn btn-success">
-		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Gandalf
-	  </a>
-    </div>
-    <div class="col-sm-2">
-	  <img class="poster" src="images/interstellar.jpg" alt="interstellar">
-	  <a href="products" class="btn btn-success">
-		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Interstellar
-	  </a>
-    </div>
-    <div class="col-sm-2">
-	  <img class="poster" src="images/inception.jpg" alt="inception">
-	  <a href="products" class="btn btn-success">
-		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Inception
-	  </a>
-    </div>
-    <div class="col-sm-2">
-	  <img class="poster" src="images/gladiator.jpg" alt="gladiator">
-	  <a href="products" class="btn btn-success">
-		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Gladiator
-	  </a>
-    </div>
+	<?php for($i = 0; $i < count($movies); $i++) {?>
+	    <div class="col-sm-2 <?php if ($i == 0): ?> col-sm-offset-2 <?php endif ?>">
+		  <img class="poster" src="images/<?php echo $movies[$i]; ?>.jpg">
+		  <a href="products" class="btn btn-success">
+			  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy <?php echo capitalised($movies[$i]); ?>
+		  </a>
+	    </div>
+	<?php } ?>
   </div>
     <br><br>
 </div>
