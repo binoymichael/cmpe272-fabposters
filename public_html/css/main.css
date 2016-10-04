@@ -1,0 +1,45 @@
+.jumbotron { 
+	margin-top: 20px;
+    background-color: #ffffff; 
+    color: #000000;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.jumbo-text {
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #ffffff;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #000 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #00aa00 !important;
+    background-color: #000 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}
+
+.poster {
+	width:200px;
+  	height:270px;	
+  	margin-bottom: 5px;
+}
+a, a:hover {
+	color: #00aa00;
+}
