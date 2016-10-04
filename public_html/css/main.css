@@ -49,3 +49,7 @@
 a, a:hover {
 	color: #00aa00;
 }
+
+.top-buffer {
+    margin-top: 40px;
+}

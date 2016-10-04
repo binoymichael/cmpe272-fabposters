@@ -10,5 +10,6 @@ return [
     	'/contacts' => 'contacts/index.php',
     ],
     'POST' => [
+        '/products/order' => 'products/order.php'
     ]
 ];

@@ -9,7 +9,7 @@
   <br>
   <div class="row">
     <div class="col-sm-2 col-sm-offset-2">
-	  <img class="poster" src="images/lotr2.jpg" alt="gandalf">
+	  <img class="poster" src="images/gandalf.jpg" alt="gandalf">
 	  <a href="products" class="btn btn-success">
 		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Gandalf
 	  </a>
