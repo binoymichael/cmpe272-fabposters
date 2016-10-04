@@ -1,3 +1,3 @@
 <?php
-	$contacts = file('contacts.txt');
+	$contacts = file('assets/contacts.txt');
 	require '../views/contacts/index.view.php';

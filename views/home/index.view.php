@@ -1,7 +1,7 @@
 <?php require '../views/partials/header.php'; ?> 
 <div class="jumbotron text-center"> <h1>fabposters</h1>
   <p class="jumbo-text">We are a fictional poster design company based out of ENG 337, Charles Davidson College of Engineering, San Jose State University.</p>
-  <p class="jumbo-text">Check out our entire collection <a href="products">here.</a><br/><a href="contact">Contact us</a>, if you need to make custom orders</p>
+  <p class="jumbo-text">Check out our entire collection <a href="products">here.</a><br/><a href="contacts">Contact us</a>, if you need to make custom orders</p>
 </div>
 
 <div class="container-fluid text-center">
