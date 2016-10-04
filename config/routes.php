@@ -8,6 +8,7 @@ return [
     	'/about' => 'about/index.php',
     	'/news' => 'news/index.php',
     	'/contacts' => 'contacts/index.php',
+        '/credits' => 'credits/index.php'
     ],
     'POST' => [
         '/products/order' => 'products/order.php'
