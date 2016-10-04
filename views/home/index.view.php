@@ -10,27 +10,27 @@
   <div class="row">
     <div class="col-sm-2 col-sm-offset-2">
 	  <img class="poster" src="images/lotr2.jpg" alt="gandalf">
-	  <button type="button" class="btn btn-success">
+	  <a href="products" class="btn btn-success">
 		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Gandalf
-	  </button>
+	  </a>
     </div>
     <div class="col-sm-2">
 	  <img class="poster" src="images/interstellar.jpg" alt="interstellar">
-	  <button type="button" class="btn btn-success">
+	  <a href="products" class="btn btn-success">
 		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Interstellar
-	  </button>
+	  </a>
     </div>
     <div class="col-sm-2">
 	  <img class="poster" src="images/inception.jpg" alt="inception">
-	  <button type="button" class="btn btn-success">
+	  <a href="products" class="btn btn-success">
 		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Inception
-	  </button>
+	  </a>
     </div>
     <div class="col-sm-2">
 	  <img class="poster" src="images/gladiator.jpg" alt="gladiator">
-	  <button type="button" class="btn btn-success">
+	  <a href="products" class="btn btn-success">
 		  <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Buy Gladiator
-	  </button>
+	  </a>
     </div>
   </div>
     <br><br>
