@@ -10,11 +10,16 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="home">HOME</a></li>
-        <li><a href="products">PRODUCTS</a></li>
-        <li><a href="about">ABOUT</a></li>
-        <li><a href="news">NEWS</a></li>
-        <li><a href="contacts">CONTACTS</a></li>
+        <li><a href="/home">HOME</a></li>
+        <li><a href="/products">PRODUCTS</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/news">NEWS</a></li>
+        <li><a href="/contacts">CONTACTS</a></li>
+        <?php if(isset($_SESSION['user'])): ?>
+          <li><a href="/logout">LOGOUT</a></li>
+        <?php else: ?>
+          <li><a href="/login">LOGIN</a></li>
+        <?php endif; ?>
       </ul>
     </div>
   </div>
