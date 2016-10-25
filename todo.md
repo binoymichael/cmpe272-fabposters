@@ -1,0 +1,5 @@
+- create db
+- create users table
+- create link to users section
+- create a tab that creates a user
+- create a tab that views all users
