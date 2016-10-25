@@ -15,6 +15,7 @@
         <li><a href="/about">ABOUT</a></li>
         <li><a href="/news">NEWS</a></li>
         <li><a href="/contacts">CONTACTS</a></li>
+        <li><a href="/users/new">USERS</a></li>
         <?php if(isset($_SESSION['user'])): ?>
           <li><a href="/logout">LOGOUT</a></li>
         <?php else: ?>

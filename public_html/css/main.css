@@ -53,3 +53,11 @@ a, a:hover {
 .top-buffer {
     margin-top: 40px;
 }
+
+.fabpills {
+    color: black;
+}
+
+.form-inline > * {
+   margin:0px 10px;
+}
