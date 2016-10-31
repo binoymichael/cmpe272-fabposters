@@ -5,6 +5,7 @@ return [
     	'/' => 'home/index.php',
     	'/home' => 'home/index.php',
     	'/products' => 'products/index.php',
+        '/products/:id/show' => 'products/show.php',
     	'/about' => 'about/index.php',
     	'/news' => 'news/index.php',
     	'/contacts' => 'contacts/index.php',
@@ -16,7 +17,7 @@ return [
         '/users' => 'users/index.php'
     ],
     'POST' => [
-        '/products/order' => 'products/order.php',
+        '/products/:id/order' => 'products/order.php',
         '/login' => 'session/create.php',
         '/users/create' => 'users/create.php'
     ]

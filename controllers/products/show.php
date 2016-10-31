@@ -1,0 +1,15 @@
+<?php
+
+function capitalised($movie) {
+	return ucwords(str_replace("_", " ", $movie));
+}
+preg_match('/\d+/', $_SERVER['PATH_INFO'], $matches);
+$movie_id = $matches[0];
+$movie = Movie::find($database_connection, $movie_id);
+
+if ($movie) {
+	require '../views/products/show.view.php';
+} else {
+	require '../controllers/errors/404.php';
+}
+

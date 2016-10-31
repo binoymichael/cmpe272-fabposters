@@ -12,6 +12,7 @@ class Router
 
 	public function redirect_to($method, $uri)
 	{
+		$uri = preg_replace('/[0-9]+/', ':id', $uri);
 		$path = parse_url($uri, PHP_URL_PATH);
 
 		if (array_key_exists($path, $this->routes[$method]))

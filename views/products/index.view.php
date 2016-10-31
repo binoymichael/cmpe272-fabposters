@@ -10,27 +10,13 @@
 				}
 				$first_row = $first_row . "'>";
 					echo "$first_row";
-					$movie = explode(",", $movies[$i*4 + $j])[0];
-					$movie_capitalised = capitalised($movie);
-					echo "<img class='poster' src='images/$movie.jpg' alt='$movie'>";
-					echo "<form action='products/order' method='post'>";
-							echo '<select class="form-control">';
-							  echo '<option selected>Mini - 8" X 12" ($4.00)</option>';
-							  echo '<option>Small - 12" X 18" ($8.00)</option>';
-							  echo '<option>Medium - 16" X 24" ($12.00)</option>';
-							  echo '<option>Large - 20" X 30" ($16.00)</option>';
-							  echo '<option>X-Large - 24" X 36" ($20.00)</option>';
-							echo '</select>';
-						  echo "<div class='checkbox'>";
-
-						    echo "<label>";
-						      echo "<input type='checkbox'> Add frame (50% extra)";
-						    echo "</label>";
-						  echo "</div>";
-						  echo "<button type='submit' class='btn btn-success'>";
-						  	echo "<span class='glyphicon glyphicon-shopping-cart' aria-hidden='true'></span> Buy $movie_capitalised";
-						  echo "</button>";
-					echo "</form>";
+					$movie = $movies[$i*4 + $j];
+					$movie_name = $movie['name'];
+					$movie_capitalised = capitalised($movie_name);
+					echo "<img class='poster' src='images/$movie_name.jpg' alt='$movie_name'>";
+					echo "<a href='products/" . $movie['id'] . "/show' class='btn btn-success'>";
+					echo "<span class='glyphicon glyphicon-eye-open'; aria-hidden='true'></span> View " . $movie_capitalised; 
+				  	echo "</a>";
 				echo '</div>';
 			}
 			echo '<br/><br/>';

@@ -46,6 +46,12 @@
   	height:270px;	
   	margin-bottom: 5px;
 }
+
+.bigposter {
+    width:330px;
+    height:445px;   
+    margin-bottom: 5px;
+}
 a, a:hover {
 	color: #00aa00;
 }

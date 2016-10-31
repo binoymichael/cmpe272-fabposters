@@ -3,5 +3,5 @@
 		return ucwords(str_replace("_", " ", $movie));
 	}
 
-	$movies = file('assets/movies.txt');
+	$movies = Movie::all($database_connection);
 	require '../views/products/index.view.php';

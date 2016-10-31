@@ -3,6 +3,6 @@
 		return ucwords(str_replace("_", " ", $movie));
 	}
 
-	$movie_lines = array_slice(file('assets/movies.txt'), 0, 4);
-	$movies = array_map(function($line) {return explode(',', $line)[0]; }, $movie_lines);
+	$all_movies = Movie::all($database_connection);
+	$movies = array_slice($all_movies, 0, 4);
 	require '../views/home/index.view.php';
