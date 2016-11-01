@@ -52,6 +52,13 @@
     height:445px;   
     margin-bottom: 5px;
 }
+
+.smallposter {
+    width:100px;
+    height:135px;   
+    margin-bottom: 5px;
+}
+
 a, a:hover {
 	color: #00aa00;
 }
@@ -60,6 +67,13 @@ a, a:hover {
     margin-top: 40px;
 }
 
+.bottom-buffer {
+    margin-bottom: 40px;
+}
+
+.products-buffer {
+    margin-top: 60px;
+}
 .fabpills {
     color: black;
 }
