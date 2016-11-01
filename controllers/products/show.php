@@ -16,7 +16,7 @@ if (!$movie) {
 if (array_key_exists('last_viewed', $_COOKIE)) {
 	$last_viewed = explode(",", $_COOKIE['last_viewed']);
 } else {
-	$last_viewed_string = array();
+	$last_viewed = array();
 }
 
 $index = array_search($movie_id, $last_viewed);
