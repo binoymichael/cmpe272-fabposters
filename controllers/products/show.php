@@ -19,6 +19,13 @@ if (array_key_exists('last_viewed', $_COOKIE)) {
 	$last_viewed = array();
 }
 
+if (isset($_COOKIE['most_viewed'])) {
+	$most_viewed = $_COOKIE['most_viewed'];
+} else {
+	$most_viewed = array();
+}
+$most_viewed[$movie_id] += 1;
+
 $index = array_search($movie_id, $last_viewed);
 if ($index === false) {
 	if (count($last_viewed) == 5) {
@@ -31,6 +38,8 @@ array_unshift($last_viewed, $movie_id);
 $new_cookie_value = implode(",", $last_viewed);
 $domain = ($_SERVER['HTTP_HOST'] != 'localhost:8887') ? $_SERVER['HTTP_HOST'] : false;
 setcookie('last_viewed', $new_cookie_value, time() + 60 * 60 * 24 * 90, '/', $domain);
-
+foreach ($most_viewed as $key => $value) {
+	setcookie("most_viewed[$key]", $value, time() + 60 * 60 * 24 * 90, '/', $domain);
+}
 require '../views/products/show.view.php';
 

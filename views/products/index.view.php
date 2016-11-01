@@ -20,7 +20,21 @@
 </div>
 <div class="col-sm-5">
 	<h4>Most Viewed</h4>
-	None
+	<?php
+		if (count($most_viewed) == 0) {
+			echo 'None';
+		}
+		for($i = 0; $i < count($most_viewed_ids); $i++) {
+			echo "<div class='col-sm-2' style='margin-right:12px'>";
+				$m_movie_id = $most_viewed_ids[$i];
+				$m_movie_name = $most_viewed_movies[$most_viewed_ids[$i]][0];
+				echo '<span style="font-size: 1.1em" class="floater label label-success label-as-badge">' . $most_viewed[$m_movie_id] . '</span>';
+				echo "<a href='products/" . $l_movie_id . "/show'>";
+					echo "<img class='smallposter' src='images/$m_movie_name.jpg' alt='$m_movie_name'>";
+			  	echo "</a>";
+			echo "</div>";
+		}
+	?>
 </div>
 </div>
 
