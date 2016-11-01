@@ -29,7 +29,7 @@
 				$m_movie_id = $most_viewed_ids[$i];
 				$m_movie_name = $most_viewed_movies[$most_viewed_ids[$i]][0];
 				echo '<span style="font-size: 1.1em" class="floater label label-success label-as-badge">' . $most_viewed[$m_movie_id] . '</span>';
-				echo "<a href='products/" . $l_movie_id . "/show'>";
+				echo "<a href='products/" . $m_movie_id . "/show'>";
 					echo "<img class='smallposter' src='images/$m_movie_name.jpg' alt='$m_movie_name'>";
 			  	echo "</a>";
 			echo "</div>";
