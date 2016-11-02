@@ -16,7 +16,7 @@
 	}
 	arsort($most_viewed);
 	$most_viewed_ids = array_slice(array_keys($most_viewed), 0, 5);
-	$last_viewed_movies = movie::find_set($database_connection, $last_viewed);
-	$most_viewed_movies = movie::find_set($database_connection, $most_viewed_ids);
+	$last_viewed_movies = Movie::find_set($database_connection, $last_viewed);
+	$most_viewed_movies = Movie::find_set($database_connection, $most_viewed_ids);
 	$movies = Movie::all($database_connection);
 	require '../views/products/index.view.php';
