@@ -64,4 +64,16 @@ class User {
 			echo "Error: " . $e->getMessage();
 		}
 	}
+	public static function all($database_connection) {
+		try {
+			$sql = 'SELECT first_name, last_name, email, address, home_phone, cell_phone FROM users where 1 ';
+			$sql .= ' ORDER BY id DESC';
+			$query = $database_connection->prepare($sql);
+			$query->execute();
+			$query->setFetchMode(PDO::FETCH_ASSOC); 
+			return $query->fetchAll();
+		} catch (PDOException $e) {
+			echo "Error: " . $e->getMessage();
+		}
+	}
 }

@@ -14,7 +14,9 @@ return [
         '/logout' => 'session/destroy.php',
         '/admin/home' => 'admin/home/index.php',
         '/users/new' => 'users/new.php',
-        '/users' => 'users/index.php'
+        '/users' => 'users/index.php',
+        '/users/all' => 'users/all.php',
+        '/users/list' => 'users/list.php'
     ],
     'POST' => [
         '/products/:id/order' => 'products/order.php',
