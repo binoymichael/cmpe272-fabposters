@@ -67,7 +67,7 @@ class User {
 	public static function all($database_connection) {
 		try {
 			$sql = 'SELECT first_name, last_name, email, address, home_phone, cell_phone FROM users where 1 ';
-			$sql .= ' ORDER BY id DESC';
+			$sql .= ' ORDER BY id';
 			$query = $database_connection->prepare($sql);
 			$query->execute();
 			$query->setFetchMode(PDO::FETCH_ASSOC); 
