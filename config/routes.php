@@ -16,7 +16,9 @@ return [
         '/users/new' => 'users/new.php',
         '/users' => 'users/index.php',
         '/users/all' => 'users/all.php',
-        '/users/list' => 'users/list.php'
+        '/users/list' => 'users/list.php',
+        '/api/products' => 'api/products/index.php',
+        '/api/products/:id' => 'api/products/show.php'
     ],
     'POST' => [
         '/products/:id/order' => 'products/order.php',
