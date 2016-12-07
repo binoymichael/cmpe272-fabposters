@@ -7,7 +7,7 @@
 		return array(
 			"id" => $movie["id"],
 			"name" => capitalised($movie["name"]),
-			"quantity" => $movie['quantity'],
+			"quantity" => $movie["quantity"],
 			"image_url" => urlencode("http://fabposters.slashbin.in/images/" . $movie['name'] . ".jpg"),
 			"price" => "$8.00",
 			"description" => capitalised($movie["name"]) . "movie poster description"
