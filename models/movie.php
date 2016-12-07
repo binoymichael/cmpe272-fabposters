@@ -39,4 +39,17 @@ class Movie {
 			echo "Error: " . $e->getMessage();
 		}
 	}
+
+	public static function update($database_connection, $movie_id, $order_quantity) {
+		try {
+			$sql = 'UPDATE movies SET quantity = quantity - :quantity where id = :id LIMIT 1';
+			$query = $database_connection->prepare($sql);
+		    $query->bindParam(':id', $movie_id);
+		    $query->bindParam(':quantity', $order_quantity);
+			$query->execute();
+            return;
+		} catch (PDOException $e) {
+			echo "Error: " . $e->getMessage();
+		}
+	}
 }

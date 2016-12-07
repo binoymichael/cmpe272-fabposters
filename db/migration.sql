@@ -33,3 +33,5 @@ INSERT INTO movies (name, url) VALUES ('star_wars', 'https://www.pinterest.com/p
 INSERT INTO movies (name, url) VALUES ('gravity', 'https://www.pinterest.com/pin/472596554628058669/');
 INSERT INTO movies (name, url) VALUES ('batman', 'https://www.pinterest.com/pin/528961918705310922/');
 INSERT INTO movies (name, url) VALUES ('up', 'https://www.pinterest.com/pin/314196511480411163/');
+
+ALTER TABLE movies ADD COLUMN quantity int DEFAULT 0;

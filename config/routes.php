@@ -22,6 +22,7 @@ return [
     ],
     'POST' => [
         '/products/:id/order' => 'products/order.php',
+        '/api/products' => 'api/products/update.php',
         '/login' => 'session/create.php',
         '/users/create' => 'users/create.php'
     ]
