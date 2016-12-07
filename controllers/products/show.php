@@ -41,5 +41,27 @@ setcookie('last_viewed', $new_cookie_value, time() + 60 * 60 * 24 * 90, '/', $do
 foreach ($most_viewed as $key => $value) {
 	setcookie("most_viewed[$key]", $value, time() + 60 * 60 * 24 * 90, '/', $domain);
 }
+
+$site_url = "https://merkato.herokuapp.com/sellers/3/products/$movie_id/track";
+$options = array(
+    CURLOPT_RETURNTRANSFER => true,
+    // return web page
+    CURLOPT_HEADER         => false,// don't return headers
+    CURLOPT_POST           => 1,
+    CURLOPT_FOLLOWLOCATION => true,   // follow redirects
+    CURLOPT_MAXREDIRS      => 10,     // stop after 10 redirects
+    CURLOPT_ENCODING       => "",     // handle compressed
+    CURLOPT_USERAGENT      => "test", // name of client
+    CURLOPT_AUTOREFERER    => true,   // set referrer on redirect
+    CURLOPT_CONNECTTIMEOUT => 120,    // time-out on connect
+    CURLOPT_TIMEOUT        => 120,    // time-out on response
+);
+$ch = curl_init($site_url);
+curl_setopt_array($ch, $options);
+
+$content  = curl_exec($ch);
+
+curl_close($ch);
+
 require '../views/products/show.view.php';
 
