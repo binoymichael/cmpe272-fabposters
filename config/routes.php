@@ -18,7 +18,9 @@ return [
         '/users/all' => 'users/all.php',
         '/users/list' => 'users/list.php',
         '/api/products' => 'api/products/index.php',
-        '/api/products/:id' => 'api/products/show.php'
+        '/api/products/:id' => 'api/products/show.php',
+        '/auth/redirect' => 'auth/redirect.php',
+        '/auth/callback' => 'auth/callback.php'
     ],
     'POST' => [
         '/products/:id/order' => 'products/order.php',

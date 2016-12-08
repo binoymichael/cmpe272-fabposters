@@ -1,5 +1,14 @@
 <?php require '../views/partials/header.php'; ?> 
 <div class="container top-buffer">
+	<div class="row" style="margin-top: 20px;">
+    <?php if(!empty($MESSAGE)): ?>
+        <div class="alert alert-success" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Success:</span>
+          <?php print($MESSAGE); ?>
+        </div>
+    <?php endif ?>
+    </div>
 	<div class="page-header">
 	  <h2>User List</h2>
 	</div>

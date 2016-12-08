@@ -27,6 +27,18 @@
 			</form>
 		</div>
 	</div>
+    <br/>
+	<div class="row">
+	    <div class="col-sm-2 col-sm-offset-2">
+            -- OR --
+		</div>
+	</div>
+    <br/>
+	<div class="row">
+	    <div class="col-sm-2 col-sm-offset-2">
+            <a href="/auth/redirect" class="btn btn-success">Log in with Merkato</a>
+		</div>
+	</div>
   </div>
 </div>
 
