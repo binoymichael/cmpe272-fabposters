@@ -12,7 +12,8 @@ return [
     'merkato' => [
         'id' => '',
         'secret' => '',
-        'redirect_uri' => 'http://localhost:8887/auth/callback'
+        'redirect_uri' => 'http://localhost:8887/auth/callback',
+        'seller_secret' => '',
     ]
 ];
 
